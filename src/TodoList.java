@@ -2,11 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TodoList {
+	private final List<TodoListItem> listOfItems = new ArrayList();
     /*
      * Add a new item to the list, given a description and priority.
      */
     public void addItem(String description, int priority) {
         // TODO
+    	TodoListItem item = new TodoListItem(description, priority);
+    	listOfItems.add(item);
     }
     
     /*
@@ -14,7 +17,7 @@ public class TodoList {
      */
     public TodoListItem getItem(int i) {
         // TODO
-        return null;
+    	return listOfItems.get(i);
     }
     
     /*
@@ -22,7 +25,7 @@ public class TodoList {
      */
     public int size() {
         // TODO
-        return 0;
+        return listOfItems.size();
     }
     
     /*
@@ -31,6 +34,7 @@ public class TodoList {
      */
     public TodoListItem findFirstNotDone() {
         // TODO
+    	if 
         return null;
     }
     
